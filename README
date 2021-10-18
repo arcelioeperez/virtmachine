@@ -7,27 +7,21 @@ THIS ONLY WORKS FOR *UNIX LIKE SYSTEMS -- I.E., LINUX, FREEBSD, AND MACOS.
 
 === Program is in C ===
 git clone and go to the directory:
-```
 git clone git@arcelioeperez/virtmachine && cd virtmachine
-```
+
 first make `run.sh` an executable with `chmod +x`:
-```
 chmod +x run.sh
-```
+
 compile and run with `run.sh`: 
-```
 ./run.sh
-```
+
 alternatively, compile with `clang` or `gcc`:
-```
 gcc main.c
 #or 
 clang main.c
-```
+
 run:
-```
 ./a.out
-```
 
 Use `./clear.sh` to remove the `.out` file
 
