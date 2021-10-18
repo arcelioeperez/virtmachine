@@ -1,0 +1,52 @@
+README
+
+=== What is this? ===
+This is a virtual machine tutorial
+
+THIS ONLY WORKS FOR *UNIX LIKE SYSTEMS -- I.E., LINUX, FREEBSD, AND MACOS.
+
+=== Program is in C ===
+git clone and go to the directory:
+```
+git clone git@arcelioeperez/virtmachine && cd virtmachine
+```
+first make `run.sh` an executable with `chmod +x`:
+```
+chmod +x run.sh
+```
+compile and run with `run.sh`: 
+```
+./run.sh
+```
+alternatively, compile with `clang` or `gcc`:
+```
+gcc main.c
+#or 
+clang main.c
+```
+run:
+```
+./a.out
+```
+
+Use `./clear.sh` to remove the `.out` file
+
+=== TEXT EDITOR ===
+VI or VIM
+
+=== OS ===
+This code was tested on MacOS and Linux (Ubuntu & Manjaro) 
+
+However given that the *nix like systems are somewhat similar you could
+also assume that this code runs in FreeBSD as well.
+
+=== REFERENCE === 
+tutorial: https://justinmeiners.github.io/lc3-vm/
+binary negative numbers: https://www.electronics-tutorials.ws/binary/signed-binary-numbers.html#:~:text=In%20two's%20complement%20form%2C%20a,complement%20is%20one's%20complement%20%2B%201.
+binary arithmetic: https://www.tutorialspoint.com/computer_logical_organization/binary_arithmetic.htm
+
+=== IMPORTANT LINKS ====
+brew for macos packages or software: https://brew.sh/
+ubuntu: https://ubuntu.com/
+manjaro: https://manjaro.org/
+docker: https://www.docker.com/
