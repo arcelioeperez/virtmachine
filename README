@@ -4,7 +4,7 @@ BASED ON: https://github.com/justinmeiners/lc3-vm
 === What is this? ===
 This is a virtual machine tutorial * this is still in progress *
 
-The assembly language that it uses is: LC-3
+The assembly language that it (the virtual machine) uses is: LC-3
 
 THIS ONLY WORKS FOR *UNIX LIKE SYSTEMS -- I.E., LINUX, FREEBSD, AND MACOS.
 
