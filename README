@@ -29,6 +29,13 @@ run:
 ./a.out
 
 Use `./clear.sh` to remove the `.out` file
+-- careful, clear.sh deletes all of the .out files
+-- if you compile with `-o` flag, you have to change clear.sh if you want 
+to remove the executable file
+
+Compiling with the `-o` flag:
+gcc main.c -o filename
+clang main.c -o filename
 
 === TEXT EDITOR ===
 VI or VIM
