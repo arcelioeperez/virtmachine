@@ -1,0 +1,13 @@
+BEFORE THE CHANGE OF ADDRESS
+the value of x = 100
+the address of x given by ptr =  0x7ffee963d478
+the address of ptr given by dptr =  0x7ffee963d470
+the address of x given by *dptr which tracks ptr =  0x7ffee963d478
+the value of x given by **dptr =  100
+
+AFTER THE CHANGE OF ADDRESS
+i.e., y = 25; *dptr = &y;
+
+*dptr is  = 0x7ffee963d464
+**dptr is =  25
+*ptr is  = 25
