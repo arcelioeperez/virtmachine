@@ -1,11 +1,16 @@
 README
+BASED ON: https://github.com/justinmeiners/lc3-vm
 
 === What is this? ===
-This is a virtual machine tutorial * in progress *
+This is a virtual machine tutorial * this is still in progress *
+
+The assembly language that it uses is: LC-3
 
 THIS ONLY WORKS FOR *UNIX LIKE SYSTEMS -- I.E., LINUX, FREEBSD, AND MACOS.
 
 === Program is in C ===
+* compile with either, CLANG or GCC *
+
 git clone and go to the directory:
 git clone git@github.com:arcelioeperez/virtmachine.git && cd virtmachine
 
