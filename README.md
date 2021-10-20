@@ -4,7 +4,7 @@ Based on [this tutorial](https://justinmeiners.github.io/lc3-vm/)
 
 This is a virtual machine. * This is still in progress *  
 
-Assembly language that the VM uses: LC-3  
+Assembly language that the VM uses: [LC-3](https://www.cs.utexas.edu/users/fussell/courses/cs310h/lectures/Lecture_10-310h.pdf)  
 
 This only works for  \*unix-like systems -- i.e., MacOS, Linux, and FreeBSD  
 ## Programmed in C  
@@ -27,4 +27,5 @@ Should work on FreeBSD without any problems.
 Based on - [Tutorial](https://justinmeiners.github.io/lc3-vm/)  
 Binary arithmetic and negative numbers - [Arithmetic](https://www.tutorialspoint.com/computer_logical_organization/binary_arithmetic.htm) & [Negative Numbers](https://www.electronics-tutorials.ws/binary/signed-binary-numbers.html#:~:text=In%20two's%20complement%20form%2C%20a,complement%20is%20one's%20complement%20%2B%201)  
 
+More on the LC-3 architecture - [here](https://www.cs.utexas.edu/users/fussell/courses/cs310h/lectures/Lecture_10-310h.pdf)  
 More instructions and random thoughts [here/README](./README).
