@@ -37,9 +37,40 @@ enum {
     OP_TRAP
 };
 
+//Memory mapped registers
 enum {
+    MR_KBSR = 0xFE00, //keyboard status
+    MR_KBDR = 0xFE02,
 
 };
+
+//Trap codes, no this is not the music genre
+enum {
+    TRAP_GETC = 0x20,
+    TRAP_OUT = 0x21,
+    TRAP_PUTS = 0x22,
+    TRAP_IN = 0x23,
+    TRAP_PUTSP = 0x24,
+    TRAP_HALT = 0x25,
+};
+
+//Memory storage
+//65536 locations
+uint16_t memory[UINT16_MAX];
+
+//Register storage
+uint16_t reg[R_COUNT];
+
+//Sign Extend
+uint16_t signExtend(uint16_t x, int bitCount){
+    if((x >> (bitCount - 1)) & 1){
+        // x = x | (0xFFFF << bitCount)
+        // where 0xFFFF (hexadecimal) == 65535 in decimal
+        x |= (0xFFFF << bitCount);
+    }
+    
+    return x;
+}
 
 int main(){
     return 0;
