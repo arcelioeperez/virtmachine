@@ -1,4 +1,5 @@
-README.md - this is based on [this tutorial](https://justinmeiners.github.io/lc3-vm/)  
+Based on [this tutorial](https://justinmeiners.github.io/lc3-vm/)  
+
 # Virtual Machine  
 
 This is a virtual machine. * This is still in progress *  
@@ -26,4 +27,4 @@ Should work on FreeBSD without any problems.
 Based on - [Tutorial](https://justinmeiners.github.io/lc3-vm/)  
 Binary arithmetic and negative numbers - [Arithmetic](https://www.tutorialspoint.com/computer_logical_organization/binary_arithmetic.htm) & [Negative Numbers](https://www.electronics-tutorials.ws/binary/signed-binary-numbers.html#:~:text=In%20two's%20complement%20form%2C%20a,complement%20is%20one's%20complement%20%2B%201)  
 
-More instructions and random thoughs [here/README](./README).
+More instructions and random thoughts [here/README](./README).
