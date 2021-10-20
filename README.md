@@ -1,11 +1,10 @@
-#Virtual Machine  
+# Virtual Machine  
 
 This is a virtual machine. * This is still in progress *  
 
 Assembly language that the VM uses: LC-3  
 
-This only works for  \*UNIX-LIKE SYSTEMS - i.e., MacOS, Linux, and FreeBSD  
-
+This only works for  \*unix-like systems -- i.e., MacOS, Linux, and FreeBSD  
 ## Programmed in C  
 
 **Compile with either, CLANG or GCC**  
