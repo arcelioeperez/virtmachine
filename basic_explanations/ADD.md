@@ -11,4 +11,4 @@ ADD R0 R0 1 ;add 1 to R0 and store back in R0
 ```  
 
 Encodings (ADD):  
-[!image](./images/add.png)  
+![image](./images/add.png)  
