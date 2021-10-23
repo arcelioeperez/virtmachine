@@ -23,13 +23,6 @@ Tested on MacOS, Linux (Ubuntu & Manjaro)
 
 Should work on FreeBSD without any problems.  
 
-## References
-Based on - [Tutorial](https://justinmeiners.github.io/lc3-vm/)  
-Binary arithmetic and negative numbers - [Arithmetic](https://www.tutorialspoint.com/computer_logical_organization/binary_arithmetic.htm) & [Negative Numbers](https://www.electronics-tutorials.ws/binary/signed-binary-numbers.html#:~:text=In%20two's%20complement%20form%2C%20a,complement%20is%20one's%20complement%20%2B%201)  
-
-More on the LC-3 architecture - [here](https://www.cs.utexas.edu/users/fussell/courses/cs310h/lectures/Lecture_10-310h.pdf)  
-More instructions and random thoughts [here/README](./README).
-
 ## Files  
 [ADD INSTRUCTIONS](./basic_explanations/ADD.md)  
 
@@ -49,3 +42,11 @@ dpointers -- dp.c output in a text file
 flags.c -- showing flags in the main.c program
 reg.c -- showing the use of enum
 ```
+## References
+Based on - [Tutorial](https://justinmeiners.github.io/lc3-vm/)  
+Binary arithmetic and negative numbers - [Arithmetic](https://www.tutorialspoint.com/computer_logical_organization/binary_arithmetic.htm) & [Negative Numbers](https://www.electronics-tutorials.ws/binary/signed-binary-numbers.html#:~:text=In%20two's%20complement%20form%2C%20a,complement%20is%20one's%20complement%20%2B%201)  
+
+More on the LC-3 architecture - [here](https://www.cs.utexas.edu/users/fussell/courses/cs310h/lectures/Lecture_10-310h.pdf)  
+Endiannes - [Endiannes article from Mozilla](https://developer.mozilla.org/en-US/docs/Glossary/Endianness)  
+More instructions and random thoughts [here/README](./README).
+
