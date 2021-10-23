@@ -1,6 +1,20 @@
 /* in progress */
 
 #include <stdio.h>
+#include <stdlib.h>
+#include <stdint.h>
+#include <string.h>
+#include <signal.h>
+
+/* unix libs */
+#include <unistd.h>
+#include <fcntl.h>
+
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/termios.h>
+#include <sys/mman.h>
+
 
 // Registers
 enum {
@@ -40,11 +54,11 @@ enum {
 //Memory mapped registers
 enum {
     MR_KBSR = 0xFE00, //keyboard status
-    MR_KBDR = 0xFE02,
+    MR_KBDR = 0xFE02, //keyboard data
 
 };
 
-//Trap codes, no this is not the music genre
+//Trap codes, no this has nothing to do with the music genre
 enum {
     TRAP_GETC = 0x20,
     TRAP_OUT = 0x21,
@@ -72,6 +86,45 @@ uint16_t signExtend(uint16_t x, int bitCount){
     return x;
 }
 
-int main(){
+//Swap -- remember that: left shift << means multiply times 2^N;
+//right shift means >> divide by 2^N;
+//the | (bitwise or) means that: if both bits are 0 then 0 - else 1;
+//"LC-3 programs are big-endian - therefore we need to swap each uint16 that is
+//loaded" - tutorial
+
+uint16_t swap16(uint16_t x){
+	return (x << 8) | (x >> 8);
+}
+
+void updateFlags(uint16_t x){
+	if(reg[r] == 0){
+		reg[R_COND] = FL_ZRO;
+	}
+	//negative numbers in binary start with 1 -- the left most number
+	else if(reg[r] >> 15){
+		reg[R_COND] = FL_NEG;
+	}
+	else{
+		reg[R_COND] = FL_POS;
+	}
+}
+
+int main(int argc, const char *argv[]){
+	/* load args */
+	if(argc < 2){
+		printf("lc3 [image-file1] ...\n");
+		exit(2);
+	}
+
+	for(int i = 1; j < argc; i++){
+		if(!read_image(argv[j])){
+			printf("failed to load image: %s\n", argv[j]);
+			exit(1);
+		}
+	}
+
+	/* setup */
+	
+
     return 0;
 }
