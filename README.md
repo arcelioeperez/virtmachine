@@ -37,7 +37,7 @@ More instructions and random thoughts [here/README](./README).
 ```
 main.c -- source file
 run.sh -- compile and run
-clears.sh -- clear *.out files
+clear.sh -- clear *.out files
 README -- random thoughts and readme info
 README.md -- better readme
 
