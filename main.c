@@ -110,6 +110,36 @@ void updateFlags(uint16_t x){
 	}
 }
 
+void readImageFile(FILE *file){
+    /* where in memory to place the image -- origin */
+    uint16_t origin;
+    fread(&origin, sizeof(origin), 1, file);
+    origin = swap16(origin);
+
+    /* only need one fread */
+    uint16_t _maxRead = UINT16_MAX - origin;
+    uint16_t *p = memory + origin;
+    size_t read = fread(p, sizeof(uint16_t)k, maxRead, file);
+
+    /* swapping to little endian */
+    while(read > 0){
+        read--;
+        *p = swap16(*p);
+        ++p;
+    }
+}
+
+int readImage(const char *imagePath){
+    FILE *file = fopen(imagePath, "rb");
+    if(!file){
+        return 0;
+    }
+    readImageFile(file);
+    fclose(file);
+
+    return 1;
+}
+
 int main(int argc, const char *argv[]){
 	/* load args */
 	if(argc < 2){
@@ -125,7 +155,7 @@ int main(int argc, const char *argv[]){
 	}
 
 	/* setup */
-	
+
 
     return 0;
 }
