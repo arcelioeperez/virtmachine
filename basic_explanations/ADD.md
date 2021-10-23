@@ -15,6 +15,16 @@ Encodings (ADD):
 
 > source: [IMAGE](https://justinmeiners.github.io/lc3-vm/)  
 
+Explanation of the encoding:  
+`0001` first 4 bits -- opcode for the ADD instruction'  
+`DR`(3 bits) destination register -- where the added sum will be stored  
+`SR1` (3 bits) -- contains first number to ADD  
+Register mode: bit[5] == 0   
+`SR2` (3 bits, 4 and 3 are unused) -- contains the second number  
+Immediate mode: bit[5] == 1  
+`imm5` -- second value embedded into the instruction  
+
+
 signExtend() function:  
 ```c
 uint16_t signExtend(uint16_t x, int bitCount){
