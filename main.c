@@ -86,11 +86,12 @@ uint16_t signExtend(uint16_t x, int bitCount){
     return x;
 }
 
-//Swap -- remember that: left shift << means multiply times 2^N;
-//right shift means >> divide by 2^N;
-//the | (bitwise or) means that: if both bits are 0 then 0 - else 1;
-//"LC-3 programs are big-endian - therefore we need to swap each uint16 that is
-//loaded" - tutorial
+/*Swap -- remember that: left shift << means multiply times 2^N;
+*right shift means >> divide by 2^N;
+*the | (bitwise or) means that: if both bits are 0 then 0 - else 1;
+*"LC-3 programs are big-endian - therefore we need to swap each uint16 that is
+*loaded" - tutorial
+*/
 
 uint16_t swap16(uint16_t x){
 	return (x << 8) | (x >> 8);
@@ -100,7 +101,7 @@ void updateFlags(uint16_t x){
 	if(reg[r] == 0){
 		reg[R_COND] = FL_ZRO;
 	}
-	//negative numbers in binary start with 1 -- the left most number
+	//negative numbers in binary start with 1 -- the leftmost number
 	else if(reg[r] >> 15){
 		reg[R_COND] = FL_NEG;
 	}

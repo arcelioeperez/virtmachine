@@ -29,3 +29,23 @@ Binary arithmetic and negative numbers - [Arithmetic](https://www.tutorialspoint
 
 More on the LC-3 architecture - [here](https://www.cs.utexas.edu/users/fussell/courses/cs310h/lectures/Lecture_10-310h.pdf)  
 More instructions and random thoughts [here/README](./README).
+
+## Files  
+[ADD INSTRUCTIONA](./basic_explanations/ADD.md)  
+
+## Directory & File Structure  
+```bash
+main.c -- source file
+run.sh -- compile and run
+clears.sh -- clear *.out files
+README -- random thoughts and readme info
+README.md -- better readme
+
+basic_explanations/
+images/ -- images
+ADD.md -- add instruction explanation
+dp.c -- showing double pointer use
+dpointers -- dp.c output in a text file
+flags.c -- showing flags in the main.c program
+reg.c -- showing the use of enum
+```
