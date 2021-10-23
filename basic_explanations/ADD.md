@@ -11,8 +11,26 @@ ADD R0 R0 1 ;add 1 to R0 and store back in R0
 ```  
 
 Encodings (ADD):  
-1. first one is the register mode  
-2. second is the immediate mode  
 ![image](./images/add.png)  
 
-> source: [image reference](https://justinmeiners.github.io/lc3-vm/)  
+> source: [IMAGE](https://justinmeiners.github.io/lc3-vm/)  
+
+signExtend() function:  
+```c
+uint16_t signExtend(uint16_t x, int bitCount){
+    if((x >> (bitCount - 1)) & 1){
+        x |= (0xFFFF << bitCount);
+    }
+    return x;
+}
+```
+`uint16_t` == unsigned 16-bit integer (max value 65,535)  
+- 65,535 in hexadecimal is `0xFFFF`  
+
+Negative numbers in binary have a 1 at the left-most position. Meanwhile, positive  
+numbers have leading 0's.  
+
+Example:   
+- -1 is `1 1111` in binary  
+- 7 is `0b111` in binary  
+- 7 is `0x7` in hexadecimal    
