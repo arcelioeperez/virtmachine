@@ -11,4 +11,8 @@ ADD R0 R0 1 ;add 1 to R0 and store back in R0
 ```  
 
 Encodings (ADD):  
+1. first one is the register mode  
+2. second is the immediate mode  
 ![image](./images/add.png)  
+
+> source: [image reference](https://justinmeiners.github.io/lc3-vm/)  
