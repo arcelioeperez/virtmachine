@@ -31,10 +31,10 @@ More on the LC-3 architecture - [here](https://www.cs.utexas.edu/users/fussell/c
 More instructions and random thoughts [here/README](./README).
 
 ## Files  
-[ADD INSTRUCTIONA](./basic_explanations/ADD.md)  
+[ADD INSTRUCTIONS](./basic_explanations/ADD.md)  
 
 ## Directory & File Structure  
-```bash
+```
 main.c -- source file
 run.sh -- compile and run
 clears.sh -- clear *.out files
