@@ -55,7 +55,7 @@ enum {
 
 };
 
-//Trap codes, no this has nothing to do with the music genre
+//Trap codes, no, this has nothing to do with the music genre
 enum {
   TRAP_GETC = 0x20,
   TRAP_OUT = 0x21,
@@ -107,7 +107,7 @@ void updateFlags(uint16_t x){
   }
 }
 
-/* Image functions */
+/* Program reading functions */
 void readImageFile(FILE *file){
   /* where in memory to place the image -- origin */
   uint16_t origin;
@@ -223,7 +223,7 @@ int main(int argc, const char *argv[]){
 
   int running = 1; 
   while(running){
-    uint16_t instr = mem_read(reg[R_PC]++);
+    uint16_t instr = memRead(reg[R_PC]++);
     uint16_t op = instr >> 12;
 
     switch(op) { 
@@ -247,20 +247,12 @@ int main(int argc, const char *argv[]){
                     updateFlags(r0);
 
                   }
-
+                  /* other instructions */
     }
-
-
-
-
-
 
   }
 
-
-
 }
 
-
-return 0;
+        return 0;
 }
