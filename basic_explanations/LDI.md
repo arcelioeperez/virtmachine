@@ -11,9 +11,13 @@ Encoding:
 
 ```c
 //destination register
+//why >> 9? 9 is the 8 bit as it starts at 0
+//why 0x7? 3 bits -- 7 in binary is 0b111
 uint16_t r0 = (instr >> 9) & 0x7;
 
 //PCoffset9
+//here we need to sign extend 9 bits
+//highest value in 9 bits is 511 (0x1FF in hexadecimal)
 uint16_t pcOffset = signExtend(instr & 0x1FF, 9);
 
 //add pcOffset to the current PC, look at that memory location to get final
