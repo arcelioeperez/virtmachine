@@ -37,6 +37,7 @@ README.md -- better readme
 basic_explanations/
 images/ -- images
 ADD.md -- add instruction explanation
+LDI.md -- ldi instruction explanation
 dp.c -- showing double pointer use
 dpointers -- dp.c output in a text file
 flags.c -- showing flags in the main.c program
