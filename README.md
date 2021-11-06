@@ -24,7 +24,8 @@ Tested on MacOS, Linux (Ubuntu & Manjaro)
 Should work on FreeBSD without any problems.  
 
 ## Files  
-[ADD INSTRUCTIONS](./basic_explanations/ADD.md)  
+[ADD INSTRUCTIONS](./basic_explanations/ADD.md)    
+[LDI INSTRUCTIONS](./basic_explanations/LDI.md)  
 
 ## Directory & File Structure  
 ```
@@ -50,5 +51,5 @@ Binary arithmetic and negative numbers - [Arithmetic](https://www.tutorialspoint
 More on the LC-3 architecture - [here](https://www.cs.utexas.edu/users/fussell/courses/cs310h/lectures/Lecture_10-310h.pdf)  
 Endiannes - [Endiannes article from Mozilla](https://developer.mozilla.org/en-US/docs/Glossary/Endianness)  
 Bitwise opererators in C - [programiz.com](https://www.programiz.com/c-programming/bitwise-operators#complement)  
+Assembly Encodings PDF - [PDF](https://justinmeiners.github.io/lc3-vm/supplies/lc3-isa.pdf)  
 More instructions and random thoughts [here/README](./README).
-
