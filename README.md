@@ -13,7 +13,7 @@ This only works for  \*unix-like systems -- i.e., MacOS, Linux, and FreeBSD
 
 Steps:  
 ```bash
-git clone git@github.com:arcelioeperez/virtmachine.git && cd virtmachine
+git clone https://github.com/arcelioeperez/virtmachine && cd virtmachine
 chmod +x run.sh clear.sh
 ./run.sh
 ```
